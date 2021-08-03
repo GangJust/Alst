@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.UserActivity">
+
+    <cn.edu.swsm.alst.ui.view.StatusBarHeightView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:use_type="use_padding_top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/def_margin"
+            android:layout_marginBottom="@dimen/def_margin">
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/card_margin"
+                android:text="@string/welcome"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:id="@+id/login_out"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:src="@drawable/ic_login_out"
+                android:tooltipText="@string/login_out" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbarSize="0dp"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/inform_layout"
+                    layout="@layout/inform_layout" />
+
+                <include
+                    android:id="@+id/options_list_layout"
+                    layout="@layout/options_list_layout" />
+            </LinearLayout>
+        </ScrollView>
+
+    </cn.edu.swsm.alst.ui.view.StatusBarHeightView>
+
+</LinearLayout>

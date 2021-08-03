@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:scrollbars="vertical"
+    tools:context=".ui.activity.LoginActivity">
+
+    <cn.edu.swsm.alst.ui.view.StatusBarHeightView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/def_margin"
+        android:orientation="vertical"
+        app:use_type="use_padding_top">
+
+        <!--<Button
+            android:id="@+id/test_notify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试通知" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/setting"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_round_settings_24"
+                android:tooltipText="@string/setting"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/open_browser"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_outline_public_24"
+                android:tooltipText="@string/browser" />
+
+        </RelativeLayout>
+
+        <!-- 占位 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/title_margin"
+            android:text="@string/title"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/title_margin"
+            android:text="@string/app_name"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_margin"
+            android:background="@drawable/edit_background"
+            android:hint="@string/user_name_hint"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/edit_padding" />
+
+        <EditText
+            android:id="@+id/edit_userPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_margin"
+            android:background="@drawable/edit_background"
+            android:hint="@string/user_pass_hint"
+            android:inputType="textPassword"
+            android:padding="@dimen/edit_padding" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_margin">
+
+            <ImageView
+                android:id="@+id/img_vCode"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:scaleType="fitXY" />
+
+            <EditText
+                android:id="@+id/edit_vCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/img_vCode"
+                android:background="@drawable/edit_background"
+                android:hint="@string/user_vcode_hint"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/edit_padding" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/def_margin"
+            android:background="@drawable/btn_background"
+            android:text="@string/login_hint"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/def_margin">
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/forgot_password"
+                android:textColor="@color/link_color" />
+
+            <TextView
+                android:id="@+id/text_readme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/readme"
+                android:textColor="@color/link_color" />
+        </RelativeLayout>
+    </cn.edu.swsm.alst.ui.view.StatusBarHeightView>
+
+</ScrollView>

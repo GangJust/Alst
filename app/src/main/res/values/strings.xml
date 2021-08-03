@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">奥蓝学生管理信息系统(学生版)</string>
+    <string name="title">重庆对外经贸学院</string>
+    <string name="setting">设置</string>
+    <string name="browser">浏览器</string>
+    <string name="login_out">注销</string>
+    <string name="welcome">你好，%s</string>
+    <string name="user_name_hint">学号/账号</string>
+    <string name="user_pass_hint">密码</string>
+    <string name="user_vcode_hint">验证码</string>
+    <string name="login_hint">登 录</string>
+    <string name="forgot_password">忘记密码？</string>
+    <string name="readme">《必读声明》</string>
+    <string name="not_inform">没有公告！</string>
+</resources>

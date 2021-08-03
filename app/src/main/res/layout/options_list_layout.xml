@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 为了避免 CardView 阴影被剪切，所以该布局不设置 padding, margin, 由 child 设置  -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/options_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+</RelativeLayout>
