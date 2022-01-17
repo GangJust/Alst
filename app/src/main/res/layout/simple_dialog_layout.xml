@@ -47,7 +47,7 @@
             android:layout_weight="1"
             android:foreground="?android:attr/selectableItemBackground"
             android:gravity="center_horizontal"
-            android:padding="@dimen/card_margin"
+            android:padding="@dimen/small_margin"
             android:textColor="@color/link_color"
             android:textSize="18sp" />
 
@@ -58,7 +58,7 @@
             android:layout_weight="1"
             android:foreground="?android:attr/selectableItemBackground"
             android:gravity="center_horizontal"
-            android:padding="@dimen/card_margin"
+            android:padding="@dimen/small_margin"
             android:textColor="@color/link_color"
             android:textSize="18sp"
             android:visibility="gone" />

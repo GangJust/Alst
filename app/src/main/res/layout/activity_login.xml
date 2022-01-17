@@ -8,7 +8,7 @@
     android:scrollbars="vertical"
     tools:context=".ui.activity.LoginActivity">
 
-    <cn.edu.swsm.alst.ui.view.StatusBarHeightView
+    <cn.edu.ccibe.alst.ui.view.StatusBarHeightView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="@dimen/def_margin"
@@ -109,6 +109,13 @@
                 android:padding="@dimen/edit_padding" />
         </RelativeLayout>
 
+        <CheckBox
+            android:id="@+id/autoLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/def_margin"
+            android:text="自动登录" />
+
         <Button
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
@@ -139,6 +146,6 @@
                 android:text="@string/readme"
                 android:textColor="@color/link_color" />
         </RelativeLayout>
-    </cn.edu.swsm.alst.ui.view.StatusBarHeightView>
+    </cn.edu.ccibe.alst.ui.view.StatusBarHeightView>
 
 </ScrollView>

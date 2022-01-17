@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cn.edu.swsm.alst">
+    package="cn.edu.ccibe.alst">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND" />
-    <uses-permission android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND" />
-
     <application
+        android:name=".AlstApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,7 +15,7 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true">
-        <activity android:name=".ui.activity.BrowserActivity"></activity>
+        <activity android:name=".ui.activity.BrowserActivity" />
         <activity android:name=".ui.activity.UserActivity" />
         <activity
             android:name=".ui.activity.LoginActivity"
@@ -30,20 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <receiver android:name=".ui.receiver.AlarmReceiver" />
-        <service android:name=".ui.service.CheckInNotifyService" />
-
-        <!-- 7.0以后的文件处理 -->
-        <!--<provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="${applicationId}.fileProvider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths" />
-        </provider>-->
     </application>
 
 </manifest>

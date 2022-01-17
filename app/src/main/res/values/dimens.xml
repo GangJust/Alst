@@ -3,9 +3,11 @@
     <dimen name="edit_padding">12dp</dimen>
     <dimen name="title_margin">8dp</dimen>
     <dimen name="title_padding">8dp</dimen>
-    <dimen name="card_margin">12dp</dimen>
+    <dimen name="card_margin">14dp</dimen>
+    <dimen name="small_margin">12dp</dimen>
+    <dimen name="icon_margin">24dp</dimen>
     <dimen name="card_padding">18dp</dimen>
-    <dimen name="def_margin">28dp</dimen>
+    <dimen name="def_margin">18dp</dimen>
     <dimen name="card_radius">8dp</dimen>
 
 </resources>

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".ui.activity.BrowserActivity">
 
-    <cn.edu.swsm.alst.ui.view.StatusBarHeightView
+    <cn.edu.ccibe.alst.ui.view.StatusBarHeightView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -18,6 +18,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:overScrollMode="never" />
-    </cn.edu.swsm.alst.ui.view.StatusBarHeightView>
+    </cn.edu.ccibe.alst.ui.view.StatusBarHeightView>
 
 </LinearLayout>

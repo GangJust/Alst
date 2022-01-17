@@ -4,6 +4,7 @@
     <string name="setting">设置</string>
     <string name="browser">浏览器</string>
     <string name="login_out">注销</string>
+    <string name="modify_password">修改密码</string>
     <string name="welcome">你好，%s</string>
     <string name="user_name_hint">学号/账号</string>
     <string name="user_pass_hint">密码</string>

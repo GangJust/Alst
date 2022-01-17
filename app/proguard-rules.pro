@@ -79,6 +79,10 @@
 
 
 # 保持自己定义的类不被混淆
--keep class cn.edu.swsm.alst.ui.activity.BrowserActivity{
+-keep class cn.edu.ccibe.alst.ui.activity.BrowserActivity{
     *;
 }
+
+#保持 百度OCR 不被混淆
+-keep class com.baidu.ocr.sdk.**{*;}
+-dontwarn com.baidu.ocr.**

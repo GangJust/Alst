@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".ui.activity.UserActivity">
 
-    <cn.edu.swsm.alst.ui.view.StatusBarHeightView
+    <cn.edu.ccibe.alst.ui.view.StatusBarHeightView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -26,7 +26,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="@dimen/card_margin"
                 android:text="@string/welcome"
-                android:textSize="28sp" />
+                android:textSize="24sp" />
 
             <ImageView
                 android:id="@+id/login_out"
@@ -37,6 +37,16 @@
                 android:layout_marginLeft="@dimen/card_margin"
                 android:src="@drawable/ic_login_out"
                 android:tooltipText="@string/login_out" />
+
+            <!--<ImageView
+                android:id="@+id/modify_password"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/icon_margin"
+                android:layout_toRightOf="@id/login_out"
+                android:src="@drawable/ic_modify_password"
+                android:tooltipText="@string/modify_password" />-->
         </RelativeLayout>
 
         <ScrollView
@@ -61,6 +71,6 @@
             </LinearLayout>
         </ScrollView>
 
-    </cn.edu.swsm.alst.ui.view.StatusBarHeightView>
+    </cn.edu.ccibe.alst.ui.view.StatusBarHeightView>
 
 </LinearLayout>
